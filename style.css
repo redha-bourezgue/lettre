@@ -23,9 +23,7 @@
   border-left: 140px solid transparent;
   border-right: 140px solid transparent;
   border-bottom: 82px solid transparent;
-  /* a little smaller */
   border-top: 98px solid #ff3333;
-  /* a little larger */
   transform-origin: top;
   pointer-events: none;
 }
@@ -71,7 +69,6 @@
 
 .words.line1 {
   top: 15%;
-  /* width: 20%; */
   height: 11%;
 }
 
@@ -221,6 +218,7 @@
     margin-left: 50px;
   }
 }
+
 body {
   background-color: #f7d9da;
 }
@@ -256,4 +254,45 @@ body {
 .reset button:hover {
   background-color: #fc9d9d;
   color: #a10000;
+}
+
+@media only screen and (max-width: 600px) {
+  #envelope {
+    width: 180px;
+    height: 120px;
+    margin: 50px auto;
+  }
+
+  .flap {
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-top: 70px solid #ff3333;
+  }
+
+  .pocket {
+    border-left: 90px solid #ff9999;
+    border-right: 90px solid #ff9999;
+    border-bottom: 60px solid #fd8787;
+  }
+
+  .letter {
+    width: 80%;
+    height: 80%;
+  }
+
+  .words {
+    height: 12%;
+    font-size: 12px;
+  }
+
+  .words.line1 {
+    top: 15%;
+  }
+  
+  .reset button {
+    font-size: 12px;
+    min-width: 100px;
+    padding: 8px;
+  }
 }
